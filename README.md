@@ -1,0 +1,14 @@
+# QT-IPC
+封装基于QLocalsocket的IPC通信
+
+ipcserver类提供ipc服务端的封装
+
+ipcclient提供ipc客户端的封装
+
+ihandlemsg是消息处理接口类，应继承该类并实现handle函数，进行自定义的消息处理逻辑
+
+ipcmsghandler类是一个示例消息处理类，继承自ihandlemsg类
+
+siganlforward类是统一信号发送类，在项目中可以使用该类进行统一的信号发送
+
+sigtest是统一信号处理类，汇集所用的槽函数
